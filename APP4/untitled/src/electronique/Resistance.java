@@ -3,7 +3,6 @@ package electronique;
 public class Resistance {
     private double resistance;
     public Resistance(double pResistance) {
-        super();
         setResistance(pResistance);
     }
 
