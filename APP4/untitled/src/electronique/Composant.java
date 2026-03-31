@@ -1,19 +1,19 @@
 package electronique;
 
 public abstract class Composant {
-    protected double resistance;
-    public Composant(double resistance) {
-        setResistance(resistance);
+    protected Resistance resistance;
+    public Composant(Resistance pResistance) {
+        setResistance(pResistance);
     }
     public double calculerResistance(){
-        return 0.0;
+        return getResistance().calculerResistance();
     }
 
-    public double getResistance() {
+    public Resistance getResistance() {
         return resistance;
     }
 
-    public void setResistance(double resistance) {
+    public void setResistance(Resistance resistance) {
         this.resistance = resistance;
     }
 }
