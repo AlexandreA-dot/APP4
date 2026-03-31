@@ -1,6 +1,6 @@
 package electronique;
 
-public class Circuit {
+public abstract class Circuit extends Composant{
     public Circuit() {
     }
 }

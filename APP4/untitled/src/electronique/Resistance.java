@@ -1,6 +1,6 @@
 package electronique;
 
-public class Resistance {
+public class Resistance extends Composant {
     public Resistance() {
     }
 }

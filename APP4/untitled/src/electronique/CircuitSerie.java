@@ -1,6 +1,6 @@
 package electronique;
 
-public class CircuitSerie {
+public class CircuitSerie extends Circuit{
     public CircuitSerie() {
     }
 }
