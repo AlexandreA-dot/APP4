@@ -11,6 +11,7 @@ public class CircuitParallele extends Circuit{
         for (Composant composant: listeComposant){
             reponse += (1 / composant.calculerResistance());
         }
+        reponse = Math.pow(reponse, -1.0);
         return reponse;
     }
 }
