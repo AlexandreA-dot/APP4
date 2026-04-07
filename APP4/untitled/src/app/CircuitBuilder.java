@@ -29,16 +29,16 @@ public class CircuitBuilder {
             List<Composant> listeComposant1 = new ArrayList<Composant>();
             for (JsonNode composantNode : node.get("composants")) {
                 listeComposant1.add(lireCircuit(composantNode));
-                return new CircuitParallele(listeComposant1);
             }
+            return new CircuitParallele(listeComposant1);
 
 
         } else if ("serie".equals(type)) {
             List<Composant> listeComposant2 = new ArrayList<Composant>();
             for (JsonNode composantNode : node.get("composants")) {
                 listeComposant2.add(lireCircuit(composantNode));
-                return new CircuitSerie(listeComposant2);
             }
+            return new CircuitSerie(listeComposant2);
 
 
         }
