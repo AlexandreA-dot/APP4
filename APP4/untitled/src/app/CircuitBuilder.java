@@ -19,7 +19,6 @@ public class CircuitBuilder {
      * @return Un objet circuit paralèle ou en série correspondant au nœud JSON.
      * @throws IllegalArgumentException Si le type de circuit est inconnu.
      */
-//araylist
     private Composant lireCircuit(JsonNode node) {
         String type = node.get("type").asText();
 
